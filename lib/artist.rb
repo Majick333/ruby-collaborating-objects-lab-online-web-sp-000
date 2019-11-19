@@ -43,9 +43,9 @@ attr_accessor :name, :songs
     @@all << self
   end
 
-  def songs
-    Song.all.select{ |song| song.artist == self}
-  end
+  #def songs
+  #  Song.all.select{ |song| song.artist == self}
+  #end
 
   def print_songs()
     puts @songs.collect {|z| z.name}
