@@ -11,7 +11,7 @@ attr_accessor :name, :songs
   end
 
   def self.all
-    @@all
+    @all
   end
 
   def add_song(song)
