@@ -18,4 +18,8 @@ attr_accessor :name, :artist
     song.artist_name = artist
     song
   end
+
+  def self.all
+    @@all
+  end
 end
