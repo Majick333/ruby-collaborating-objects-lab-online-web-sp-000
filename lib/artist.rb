@@ -11,7 +11,9 @@ attr_accessor :name, :songs
   end
 
   def self.all
-    @@all
+    Artist.each do |nm|
+      puts nm.name
+    end
   end
 
   def add_song(song)
